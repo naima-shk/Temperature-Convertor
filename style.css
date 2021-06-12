@@ -1,0 +1,30 @@
+*{
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+    font-family: 'Mulish', 'sens-serif';
+}
+
+body{
+    display: grid;
+    width: 50vw;
+    height: 30vh;
+    background-color: #f8e7af;
+}
+/*.container{
+    place-items: center;
+    padding-left: 50px;
+    margin-left: 50px;
+    background-color:  #fab1a0;
+    width: 30vw;
+    height: 10vh;
+} */
+#tempConv{
+    place-items: center;
+    padding-left: 50px;
+    margin-left: 50px;
+    background-color:  #fab1a0;
+    width: 30vw;
+    height: 20vh;
+}
+   
