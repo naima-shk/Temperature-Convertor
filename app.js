@@ -1,9 +1,9 @@
 function tempCalc() {
-    const  numberTemp= document.getElementById('temp').value;
-    console.log(numberTemp);
-    const  tempSelected = document.getElementById('unit').value;
+    const  numberTemp= document.querySelector('#temp').value;
+    //console.log(numberTemp);
+    const  tempSelected = document.querySelector('#unit');
    const valueTemp = unit.options[tempSelected.selectedIndex].value;
-    console.log(valueTemp);
+   // console.log(valueTemp);
       const  celToFah=(cel)=>{
         let fehrenhiet = Math.round((cel *9/5) +32);
         return fehrenhiet;
@@ -16,10 +16,10 @@ function tempCalc() {
 
     if(valueTemp == 'cel'){
         result= celToFah(numberTemp);
-        document.getElementById('result').innerHTML = `${result} Fahrenhiet`;
+        document.querySelector('#result').innerHTML = `${result} Fahrenhiet`;
 } else{
     result = fehToCel(numberTemp);
-    document.getElementById('result').innerHTML = `${result} celsius`;
+    document.querySelector('#result').innerHTML = `${result} celsius`;
 }
 }
     
